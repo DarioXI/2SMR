@@ -37,11 +37,27 @@ p.bola{
 p.hormiga{
     border: 10px solid black;
     border-image-source: url(./img/hormigas.png)  ;
-    border-image-repeat: stretch;
+    border-image-repeat:stretch;
+    border-image-slice: 70;
+    border-image-width: 2;
+    padding: 10px;
     
 }
 
 p.pastilla{
-        border:10px   solid ;
-    border-image-source: url(./img/pastilla.png)  ;
+    padding: 20px;
+    border: 25px solid transparent;
+    border-image-source: url(./img/pastilla.png);
+    border-image-slice: 25;   
+    border-image-repeat: stretch;
+
+}
+
+p.ventana {
+    border: 40px solid transparent;
+    border-image-source: url('./img/ventana.png');
+    border-image-slice: 50 80 20 80 ;
+    border-image-width: 50px 80px 20px 80px;
+    border-image-repeat: stretch;
+    padding: 10px;
 }
