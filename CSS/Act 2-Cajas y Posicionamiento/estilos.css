@@ -33,3 +33,15 @@ p.bola{
     border:10px solid black;
     border-image-source: url(./img/bola-100.png);
 }
+
+p.hormiga{
+    border: 10px solid black;
+    border-image-source: url(./img/hormigas.png)  ;
+    border-image-repeat: stretch;
+    
+}
+
+p.pastilla{
+        border:10px   solid ;
+    border-image-source: url(./img/pastilla.png)  ;
+}
