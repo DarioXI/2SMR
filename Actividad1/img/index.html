@@ -1,0 +1,203 @@
+GUIA CSS CON EJEMPLOS SIMPLES
+
+SELECTORES
+
+Sirven para elegir qué elemento cambia de estilo.
+
+Etiqueta:
+Afecta a TODOS los elementos de ese tipo.
+
+Ejemplo:
+p {
+color: red;
+}
+
+Clase:
+Se usa con punto (.)
+La puedes usar muchas veces.
+
+Ejemplo:
+.caja {
+background: blue;
+}
+
+ID:
+Se usa con #
+Solo se usa una vez.
+
+Ejemplo:
+#principal {
+width: 300px;
+}
+
+Etiqueta + clase:
+Solo afecta a los p que tengan clase caja.
+
+Ejemplo:
+p.caja {
+color: green;
+}
+
+PADRE E HIJO
+
+Seleccionar cosas que están DENTRO de otras.
+
+Descendientes:
+.todos los p dentro de .padre
+
+.padre p {
+color: red;
+}
+
+Solo hijos directos:
+
+.padre > p {
+color: blue;
+}
+
+DISPLAY
+
+Cómo se comporta una caja.
+
+BLOCK:
+Ocupa todo el ancho
+
+display: block;
+
+INLINE:
+Se pone en línea
+No acepta width ni height
+
+display: inline;
+
+INLINE-BLOCK:
+En línea pero acepta tamaño
+
+display: inline-block;
+
+NONE:
+Desaparece completamente
+
+display: none;
+
+VISIBILITY
+
+Oculta pero deja el hueco.
+
+visibility: hidden;
+
+POSITION
+
+Mover elementos.
+
+RELATIVE:
+Se mueve desde donde está
+
+position: relative;
+top: 20px;
+left: 30px;
+
+ABSOLUTE:
+Se coloca según su padre
+
+position: absolute;
+top: 0;
+right: 0;
+
+FIXED:
+Se queda pegado a la pantalla
+
+position: fixed;
+bottom: 0;
+
+STICKY:
+Se vuelve fijo al hacer scroll
+
+position: sticky;
+top: 0;
+
+FLOAT
+
+Mover cajas a izquierda o derecha
+
+float: left;
+float: right;
+
+Para cancelar:
+clear: both;
+
+FLEXBOX
+
+Para ordenar cajas en filas o columnas.
+
+En el padre:
+
+display: flex;
+
+Fila o columna:
+
+flex-direction: row;
+flex-direction: column;
+
+Centrar horizontal:
+
+justify-content: center;
+
+Centrar vertical:
+
+align-items: center;
+
+Ejemplo completo:
+
+.contenedor {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+GRID
+
+Para cuadrículas tipo tablero.
+
+En el padre:
+
+display: grid;
+
+3 columnas iguales:
+
+grid-template-columns: repeat(3, 1fr);
+
+Espacio entre cajas:
+
+gap: 10px;
+
+CENTRAR TODO
+
+Con flex:
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+Con grid:
+
+display: grid;
+place-items: center;
+
+DIFERENCIAS CLAVE
+
+display: none -> no existe
+visibility: hidden -> no se ve pero ocupa espacio
+
+flex -> ordenar en fila o columna
+grid -> hacer cuadrículas
+
+EN RESUMEN RAPIDO
+
+Selectores = elegir elementos
+Padre/hijo = elegir elementos dentro de otros
+Display = cómo se comportan cajas
+Position = mover cajas
+Float = antiguo para mover cajas
+Flex = ordenar cajas simple
+Grid = organizar en rejilla
