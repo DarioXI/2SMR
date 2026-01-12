@@ -7,11 +7,31 @@ body {
   font-size: 17px;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'menu'
+  'main'
+  'aside'
+  'footer';
+  background-color: white;
+  gap:10px ;
+}
 
 .header {
+  grid-area: header;
   background-color: purple;
   text-align: center;
   color: #ffffff;
+}
+
+.menu{
+  grid-area: menu;
+}
+
+.contenido{
+  grid-area: main;
 }
 
 .header > h1 {
@@ -46,24 +66,38 @@ body {
   margin-bottom: 7px;
 }
 
-.datos {
+.aside {
+  grid-area: aside;
   border: 1px solid #0099cc;
   background-color: beige;
   padding: 10px;
 }
 
-.datos > h2 {
+.aside > h2 {
   font-size: 20px;
 }
 
-.datos li {
+.aside li {
   margin-bottom: 5px;
 }
 
 .footer {
+  grid-area: footer;
   background-color: #0099cc;
   color: #ffffff;
   text-align: center;
 }
+
+
+@media(min-width: 768px) 
+{
+  .header{grid-area: 1 /span 6}
+  .menu {grid-area: 2 /span 1}
+  .contenido {grid-area: 2 /span 4}
+  .aside {grid-area: 2 /span 1}
+  .footer {grid-area: 3 /span 6}
+}
+
+
 
 
