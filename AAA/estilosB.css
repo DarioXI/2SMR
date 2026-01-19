@@ -1,0 +1,222 @@
+/*  Reset de márgenes y configuración global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Configuración global del cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+header {
+    background-color: #000;
+    border-bottom: 3px solid #00ff88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo h1 {
+    color: #f0f0f0;
+    font-size: 1.8rem;
+}
+
+/*  Estilos del menú de navegación */
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-principal a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: #00ff88;
+}
+
+/*  Estilos de la primera sección */
+.seccion-principal {
+    background-color: #252525;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-presentacion {
+    flex: 1;
+}
+
+.texto-presentacion h2 {
+    color: #00ff88;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.texto-presentacion p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/*  Estilos del formulario de login */
+.formulario-login {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.formulario-login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.btn-entrar {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #00cc6a;
+}
+
+/*  Estilos de productos */
+.productos-destacados {
+    padding: 40px;
+}
+
+.productos-destacados h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #666;
+    font-size: 1.8rem;
+}
+
+/*  Grid para las tarjetas de productos */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/*  Estilos de las tarjetas de producto */
+.tarjeta-producto {
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.precio {
+    font-size: 1.2rem;
+    color: #00ff88;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: transparent;
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/*  Estilos del footer */
+.pie-pagina {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+
+.pie-pagina p {
+    margin-bottom: 10px;
+}
+
+.enlace-volver {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+}

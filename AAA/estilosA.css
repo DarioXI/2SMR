@@ -1,0 +1,214 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    border-bottom: #00ff88 solid 2px;
+}
+
+.gaming{
+    display: flex;
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 20px  ;
+}
+
+
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li :hover{
+    color: green;
+}
+
+main{
+    background-color: #252525;
+}
+
+.main1{
+    display: flex;
+}
+
+.texto {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login {
+    border: #00ff88 2px solid;
+    width: 300px;
+    background-color: rgba (0,0,0,0.8);
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(46, 42, 42)
+}
+
+.login h2 {
+    text-align: center;
+    color: white;
+}
+
+.login label {
+    color: white;
+}
+
+
+.login > form > input {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgb(65, 64, 64) ;
+    border-radius: 5px;
+    
+}
+
+.boton {
+    width: 100%;
+    background-color: #00ff88;
+}
+.boton:hover{
+    background-color: red;
+}
+
+.main2 {
+    background-color: #464545;
+}
+
+.main2 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+}
+
+.productos{
+    display: grid;
+    grid-template-areas: 
+    'teclado'
+    'raton'
+    'monitor'
+    'cascos'
+    
+    ;
+ grid
+.teclado {grid-area: 1 /span 1;}
+.raton {grid-area: 1 /span 1;}
+.monitor {grid-area: 2 /span 1;}
+.cascos {grid-area: 2 /span 1;}
+gap: 20px;
+
+}
+
+
+.teclado {
+    display: grid;
+    border: solid 1px gray;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333;
+    text-align: center;
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    grid-area: teclado;
+    max-width: 75%;
+
+}
+.teclado img {
+    width: 50%;
+}
+
+
+.raton {
+    display: grid;
+    border: solid 1px gray;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333;
+    text-align: center;
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    grid-area: raton;
+    max-width: 75%;
+}
+.raton img {
+    width: 50%;
+}
+
+
+.monitor {
+    border: solid 1px gray;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333;
+    text-align: center;
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    grid-area: monitor;
+     max-width: 75%;
+}
+.monitor img {
+    width: 50%;
+}
+
+
+.cascos {
+    border: solid 1px gray;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333;
+    text-align: center;
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    grid-area: cascos;
+     max-width: 75%;
+}
+
+.cascos img {
+    width: 50%;
+}
+
+.boton2 {
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #00ff88;
+
+}
+
+.boton2:hover{
+    background-color: #00ff88;
+    color: black;
+}
+
+
+footer{
+    background-color: rgb(141, 104, 104);
+ text-align: center;
+    height: 80px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+footer p {
+    margin-top:40px ;
+}
+
+body{
+
+  background-color: rgb(141, 104, 104);
+}

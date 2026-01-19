@@ -1,0 +1,67 @@
+/* Estilos generales para visibilidad */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.flex-item, .grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #2980b9;
+    font-weight: bold;
+    
+}
+
+/* --- EJERCICIO 1: FLEXBOX --- */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 10px;
+    margin-bottom: 40px; 
+}
+
+.grid-item {
+    background-color: none;
+}
+
+.flex-item{
+    flex:1;
+}
+
+
+
+/* --- EJERCICIO 2: GRID --- */
+.grid-container {
+    display: grid;
+    grid-area:
+    'header'
+    'sidebar'
+    'content'
+    'footer'
+    ;
+}
+
+.header { grid-area:header; background-color: black; margin: 5px;}
+.sidebar {grid-area: sidebar; background-color: orange;  margin: 5px;}
+.content {grid-area: content; background-color: green; margin: 5px;}
+.footer {grid-area: footer; background-color: red; margin: px;}
+
+@media (min-width:768px){
+    .header {grid-area:1 /span 12}
+    .sidebar {grid-area:2 /span 1}
+    .content {grid-area: 2 /span 11; min-height: 200px;}
+    .footer {grid-area: 3 /span 12}
+}
+
+@media (max-width:768px){
+    .flex-container {flex-direction: column;}
+    .header {grid-area: 1 /span 6}
+    .content {grid-area: 2 /span 6; min-height: 200px;}
+    .sidebar {grid-area: 3 /span 6}
+    .footer {grid-area:4 /span 6}
+}
+

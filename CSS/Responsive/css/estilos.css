@@ -32,6 +32,7 @@ body {
 
 .contenido{
   grid-area: main;
+  display: flex;
 }
 
 .header > h1 {
@@ -87,8 +88,10 @@ body {
   color: #ffffff;
   text-align: center;
 }
-
-
+.imagen {
+  max-width: 100%;
+  height: auto;
+}
 @media(min-width: 768px) 
 {
   .header{grid-area: 1 /span 6}
@@ -98,6 +101,11 @@ body {
   .footer {grid-area: 3 /span 6}
 }
 
-
-
-
+@media(min-width: 1024px) 
+{
+  .header{grid-area: 1 /span 6}
+  .menu {grid-area: 2 /span 1}
+  .contenido {grid-area: 2 /span 5}
+  .aside {grid-area: 3 /span 6 }
+  .footer {grid-area: 4 /span 6}
+}

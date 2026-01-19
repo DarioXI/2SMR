@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen RA1 y RA2 - Dario Jose Alcaide</title>
+    <link rel="stylesheet" href="./estilosB.css">
+    <!-- Enlace a hoja de estilos CSS externa -->
+</head>
+<body>
+    <!--  Cabecera  -->
+    <header id="header-principal">
+        <div class="logo">
+            <h1>GAMING ZONE</h1>
+        </div>
+        <!--  Menú de navegación  -->
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="https://www.iesmedinazahara.es/" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--  Texto y formulario -->
+        <section class="seccion-principal">
+            <div class="texto-presentacion">
+                <h2>Sube de Nivel</h2>
+                <p>Equípate con los mejores periféricos. Rendimiento extremo para jugadores.</p>
+            </div>
+            
+            <!--  Formulario -->
+            <aside class="formulario-login">
+                <h3>Inicio de Sesión</h3>
+                <form method="post">
+                    <div class="grupo-formulario">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" name="usuario">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena">
+                    </div>
+                    <button type="submit" class="btn-entrar">Entrar</button>
+                </form>
+            </aside>
+        </section>
+
+        <!-- Sección 2 -->
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="contenedor-tarjetas">
+                <!--  Teclado -->
+                <article class="tarjeta-producto">
+                    <img src="./css/img/teclado.png" alt="Teclado RGB">
+                    <h3>Teclado RGB</h3>
+                    <p class="precio">59.99€</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+                
+                <!--  Ratón -->
+                <article class="tarjeta-producto">
+                    <img src="./css/img/raton.png" alt="Ratón Pro">
+                    <h3>Ratón Pro</h3>
+                    <p class="precio">34.50€</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+                
+                <!--  Monitor -->
+                <article class="tarjeta-producto">
+                    <img src="./css/img/monitor.png" alt="Monitor gaming 144Hz">
+                    <h3>Monitor 144Hz</h3>
+                    <p class="precio">199.99€</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+                
+                <!--  Auriculares -->
+                <article class="tarjeta-producto">
+                    <img src="./css/img/auriculares.png" alt="Auriculares 7.1">
+                    <h3>Auriculares 7.1</h3>
+                    <p class="precio">89.99€</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--  Footer -->
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Gaming Zone - Examen SMR</p>
+        <a href="#header-principal" class="enlace-volver">Volver arriba</a>
+    </footer>
+</body>
+</html> 
